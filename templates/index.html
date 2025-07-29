@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ bank.name }} - Home</title>
+</head>
+<body>
+  <h1>Welcome to {{ bank.name }}</h1>
+  <p><a href="{{ url_for('apply', bank_id=session['bank']) }}">Apply for a Loan</a></p>
+</body>
+</html>
